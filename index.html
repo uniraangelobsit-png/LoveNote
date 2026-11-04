@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveNote 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💌 LoveNote</h1>
+        <p>Make someone's heart smile.</p>
+    </header>
+
+    <main>
+        <h2>Create Your Love Letter 💗</h2>
+
+        <form id="letterForm">
+
+            <label>To someone special</label>
+            <input
+                type="text"
+                id="recipient"
+                placeholder="Enter their name"
+                required
+            >
+
+            <label>Your name</label>
+            <input
+                type="text"
+                id="sender"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label>Your message</label>
+            <textarea
+                id="message"
+                placeholder="Write your love letter here..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Create My Love Letter 💕
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+
+     <script src="script.js"></script>
+</body>
+</html>
